@@ -31,7 +31,7 @@ main()
       opcion= getch(); 
       
       //pedido de opciones
-      switch(opcion)
+      switch (opcion)
       {
          case 'A':   
          case 'a':   
