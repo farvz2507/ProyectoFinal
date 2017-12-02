@@ -53,7 +53,7 @@ void listar_pedidos (Lista* primero){
         printf("\n\n");
      }
      if(primero==NULL)
-        printf("  Nenhum pedido cadastrado.");
+        printf("  Ningun Pedido Registrado.");
      printf("\n\n  Presione cualquier tecla para volver al pedido principal..");
 }
 
