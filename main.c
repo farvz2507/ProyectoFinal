@@ -10,19 +10,19 @@ main()
    //Repetir Programa.
    while(opcion!='s')   
    {  
-     //pedido de opciones 
+     //Menu de opciones 
 
 	  printf("\t\t\t     SISTEMA DE PEDIDOS");printf("\t\t\t      \n\n");
 
-      printf("\t\t\t    (A)  Nuevo pedido               \n");
+      printf("\t\t\t    A)  Nuevo pedido               \n");
       
-      printf("\t\t\t    (B)  Listar pedido                       \n");      
+      printf("\t\t\t    B)  Listar pedido                       \n");      
       
-      printf("\t\t\t    (C)  Eliminar pedido            \n");      
+      printf("\t\t\t    C)  Eliminar pedido            \n");      
       
-      printf("\t\t\t    (D)  Modificar pedido            \n"); 
+      printf("\t\t\t    D)  Modificar pedido            \n"); 
       
-      printf("\t\t\t    (S)  Salir                         \n");
+      printf("\t\t\t    S)  Salir                         \n");
       
       printf("\n\n");
       printf("\t\t      Digite una opcion del pedido: ");
@@ -38,9 +38,7 @@ main()
               //Insertar pedido.
               fflush(stdin);
               system("cls");
-              printf(" %c----------------------------------------------------------------------------%c\n",201,187);
               printf(" | ");printf("\t\t\t          NUEVO PEDIDO     ");printf("\t\t\t      |\n");
-              printf(" %c----------------------------------------------------------------------------%c\n",200,188);
               pedido= insertar_pedido(pedido);
          getch();
          system("cls"); 
@@ -50,9 +48,7 @@ main()
          case 'b':       
               //Listar pedido.
               system ("cls");
-              printf(" %c----------------------------------------------------------------------------%c\n",201,187);
-              printf(" | ");printf("\t\t\t          LISTAR PEDIDO     ");printf("\t\t\t      |\n");
-              printf(" %c----------------------------------------------------------------------------%c\n",200,188);
+              printf("\t\t\t          LISTAR PEDIDO     ");printf("\t\t\t      |\n");
               listar_pedidos(pedido);
          getch();
          system("cls");
@@ -60,11 +56,9 @@ main()
          
          case 'C':   
          case 'c':   
-              //Excluindo pedidos da lista.
+              //Excluyendo pedidos da lista.
               system ("cls");
-              printf(" %c----------------------------------------------------------------------------%c\n",201,187);
-              printf(" | ");printf("\t\t\t        ELIMINAR PEDIDO");printf("\t\t\t      |\n");
-              printf(" %c----------------------------------------------------------------------------%c\n",200,188);
+              printf("\t\t\t        ELIMINAR PEDIDO");printf("\t\t\t      |\n");
               pedido= eliminar_pedido(pedido);
          getch();
          system("cls");
@@ -74,9 +68,7 @@ main()
          case 'd':   
               //Modificar pedido. 
               system ("cls");
-              printf(" %c----------------------------------------------------------------------------%c\n",201,187);
-              printf(" | ");printf("\t\t\t        MODIFICAR PEDIDO");printf("\t\t\t      |\n");
-              printf(" %c----------------------------------------------------------------------------%c\n",200,188);
+              printf(" ");printf("\t\t\t        MODIFICAR PEDIDO");printf("\t\t\t      \n");
               alterar_pedidos(pedido);
          getch();
          system("cls");

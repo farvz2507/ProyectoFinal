@@ -91,7 +91,7 @@ Lista* eliminar_pedido(Lista *primero){
         anterior->prox= actual->prox;
      }
      
-     //Liberando la memoroia
+     //Liberando la memoria
      free(actual);
      printf("\n\n  Presione cualquier tecla para volver al pedido principal..");
      return primero;     
