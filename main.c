@@ -3,7 +3,7 @@
 
 main() 
 { 
-   //Declaracion de Variables
+   //Declarando Variables
    Lista *pedido= NULL;
    char opcion;
      
