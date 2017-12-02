@@ -7,11 +7,11 @@ Lista* insertar_pedido (Lista *primero){
      char identificador= 'F';
      
      //Info del pedido
-     printf("  Nombre: ");
+     printf(" \t\t\t Nombre: ");
      fflush (stdin); fgets(pedido.Nombre, 40, stdin); printf ("\n");
-     printf("  Precio: $  ",135);
+     printf(" \t\t\t Precio: $  ",135);
      fflush (stdin); fgets(pedido.Precio, 40, stdin); printf ("\n");
-     printf("  C%cdigo: ",162);
+     printf(" \t\t\t C%cdigo: ",162);
      scanf("%u",&pedido.codigo);printf ("\n");
      
      //Verificando si existe el pedido
@@ -44,11 +44,11 @@ void listar_pedidos (Lista* primero){
      
      //Imprimiendo pedidos de la lista con su respectiva informacion
      for(actual= primero ; actual!= NULL; actual= actual->prox){
-        printf("\n  Nombre: ");
+        printf("\n\t\t\t  Nombre: ");
         printf("%s", actual->Nombre);
-        printf("\n  Precio: $  ",135);
+        printf("\n\t\t\t  Precio: $  ",135);
         printf("%s", actual->Precio);
-        printf("\n  C%cdigo: ",162 );
+        printf("\n\t\t\t  C%cdigo: ",162 );
         printf("%u", actual->codigo);
         printf("\n\n");
      }
